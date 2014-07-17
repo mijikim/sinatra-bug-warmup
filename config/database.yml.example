@@ -9,7 +9,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: debugging_sinatra_development
+  database: debugging_sinatra_development_test
   pool: 5
   username: gschool
   password:

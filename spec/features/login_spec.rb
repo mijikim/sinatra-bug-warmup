@@ -7,7 +7,6 @@ feature "Registration" do
     fill_in "Username", with: "huntanumba1"
     fill_in "Email", with: "hunter@example.com"
     fill_in "Password", with: "1234"
-    check "I legally verify that my name is actually Hunter"
 
     click_button "Register"
 

@@ -22,7 +22,7 @@ class App < Sinatra::Base
   post "/registrations" do
     insert_sql = <<-SQL
       INSERT INTO users (username, email, password, name_is_hunter)
-      VALUES ('#{params[:username]}', '#{params[:email]}', '#{params[:password]}', '#{params[:value]}')
+      VALUES ('#{params[:username]}', '#{params[:email]}', '#{params[:password]}', '#{params[:name_is_hunter]}')
     SQL
 
     @database_connection.sql(insert_sql)
